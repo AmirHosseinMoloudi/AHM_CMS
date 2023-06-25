@@ -23,6 +23,19 @@
 	}
 
 @font-face {
+    font-family: 'BYekan';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../fonts/BYekan.eot'); /* IE9 Compat Modes */
+    src: local('BYekan'),
+    url('../fonts/BYekan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/BYekan.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/BYekan.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/BYekan.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/BYekan.svg#BYekan') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
 	font-family: 'Raleway';
 	font-style: italic;
 	font-weight: 200;
@@ -104,7 +117,7 @@
 
 /* Fonts -------------------------------------------------------------------- */
 
-	--font-stack: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* Raleway font + Default Github font stack */
+	--font-stack: "BYekan", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica", "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* Raleway font + Default Github font stack */
 	--font-size: 16px; /* Base size */
 	}
 
@@ -370,7 +383,7 @@ a.top-menu-item-download:hover {
 	}
 
 #switch-theme-holder{display:block;position:absolute;top:18px;right:15px;width:20px;height:20px;}
-.switch-theme-icon{background:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="sbui-icon text-scale-1100 hover:text-scale-1200 transition"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>');background-position: center center;background-repeat: no-repeat;cursor:pointer;}	
+.switch-theme-icon{background:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="sbui-icon text-scale-1100 hover:text-scale-1200 transition"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>');background-position: center center;background-repeat: no-repeat;cursor:pointer;}
 /*
 #search-bar{
 	float:right;
@@ -1089,7 +1102,7 @@ a.news-left-years-active:visited{
 	border-bottom:1px dashed var(--primary-color);
 	transition:all 0.5s;
 }
-.news-box:hover{	
+.news-box:hover{
 	border:1px dashed #ccc;
 	border-bottom:1px dashed var(--primary-color);
 }
@@ -1453,7 +1466,7 @@ a.download-buttons:nth-of-type(1){
 	transition: all 0.5s;
 	fill:var(--primary-color);
 	}
-	
+
 #contribute-heart:hover{
 	width:85px;
 	height:auto;
@@ -1577,13 +1590,13 @@ html.dark-theme a.link-primary:link, html.dark-theme a.link-primary:visited{
 html.dark-theme a.link-reverse:link, html.dark-theme a.link-reverse:visited{color:#fff;border-bottom:1px dotted #fff;}
 
 html.dark-theme a {color: rgba(221, 72, 20, 1);}
-html.dark-theme a:hover {color: rgba(221, 72, 20, 1);}	
+html.dark-theme a:hover {color: rgba(221, 72, 20, 1);}
 
 
 /* HEADER =================================================================== */
 
 html.dark-theme header{background:#1a1a1a;border-bottom: 1px solid rgba(255,255,255, 0.05);}
-	
+
 /* Menu --------------------------------------------------------------------- */
 
 html.dark-theme #menu-toggle button, html.dark-theme #menu-toggle button:hover, html.dark-theme #menu-toggle button:focus {
@@ -1606,12 +1619,12 @@ html.dark-theme a.top-menu-item-download:hover {
 	border-bottom:0px solid #000000;
 	color:#eee;
 	box-shadow: 0 0 10px rgba(221, 72, 20, 0.6);
-	}	
-	
+	}
+
 html.dark-theme a.top-menu-item-download-active {background-color: rgba(221, 72, 20, 0.9);color: #fff/*#888*/;}
 html.dark-theme a.top-menu-item-download-active:hover {background-color: rgba(221, 72, 20, 0.9);border-bottom:0px solid #000000;color:#fff;}
 
-html.dark-theme .switch-theme-icon{background:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" class="sbui-icon text-scale-1100 hover:text-scale-1200 transition"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>');background-position: center center;background-repeat: no-repeat;cursor:pointer;}	
+html.dark-theme .switch-theme-icon{background:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" class="sbui-icon text-scale-1100 hover:text-scale-1200 transition"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>');background-position: center center;background-repeat: no-repeat;cursor:pointer;}
 
 
 html.dark-theme section#spotlight-outer{float: left;width: 100%;height: 100%;margin: 0;padding: 0;background:#242424;}
@@ -1637,7 +1650,7 @@ html.dark-theme .githubs:hover .github-data{color:#fff;}
 html.dark-theme .githubs:hover .github-icon{fill:#fff}
 html.dark-theme .github-icon{fill:rgba(255,255,255, 0.50);}
 html.dark-theme .github-data{color:rgba(255,255,255, 0.50);}
-html.dark-theme a.github-link:link,html.dark-theme a.github-link:visited{color:#1a1a1a;}	
+html.dark-theme a.github-link:link,html.dark-theme a.github-link:visited{color:#1a1a1a;}
 
 
 /* SECTIONS ================================================================= */

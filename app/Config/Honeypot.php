@@ -14,7 +14,7 @@ class Honeypot extends BaseConfig
     /**
      * Honeypot Label Content
      */
-    public string $label = 'Fill This Field';
+    public string $label = 'این قسمت را کامل کنید';
 
     /**
      * Honeypot Field Name

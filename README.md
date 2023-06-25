@@ -63,8 +63,6 @@ Use these steps to create a local installation for development and testing.
 4. Install dependencies: `composer install`
 5. Create your **.env** file: `cp env .env`
 6. Edit **.env** and set at least the following:
-    * `GITHUB_ACCESS_TOKEN = ghp_***`
-        * Set your GitHub Personal Access Token.
     * `CI_ENVIRONMENT = development`
     * `database.default.database = ../writable/database.db`
     * `database.default.DBDriver = SQLite3`

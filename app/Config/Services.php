@@ -2,12 +2,8 @@
 
 namespace Config;
 
-use App\Libraries\GitHub;
 use CodeIgniter\Config\BaseService;
 use CodeIgniter\Psr\Cache\Pool;
-use Config\GitHub as GitHubConfig;
-use Github\AuthMethod;
-use Github\Client;
 use RuntimeException;
 
 /**
@@ -30,26 +26,5 @@ class Services extends BaseService
      *
      * @param mixed $getShared
      */
-    public static function github(?GitHubConfig $config = null, ?Client $client = null, $getShared = true): GitHub
-    {
-        if ($getShared) {
-            return static::getSharedInstance('github', $config, $client);
-        }
 
-        if (null === $client) {
-            $client = new Client();
-            $client->addCache(new Pool(), ['default_ttl' => DAY]);
-        }
-
-        $token = env('GITHUB_ACCESS_TOKEN');
-        // $token may be null or empty string
-        if (empty($token)) {
-            throw new RuntimeException('You must set an access token before using the GitHub service.'); // @codeCoverageIgnore
-        }
-
-        // Authenticate against GH
-        $client->authenticate($token, AuthMethod::ACCESS_TOKEN);
-
-        return new GitHub($config ?? config(GitHubConfig::class), $client);
-    }
 }

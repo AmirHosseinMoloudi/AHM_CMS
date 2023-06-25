@@ -18,7 +18,7 @@ class Email extends BaseConfig
     /**
      * The mail sending protocol: mail, sendmail, smtp
      */
-    public string $protocol = 'mail';
+    public string $protocol = 'smtp';
 
     /**
      * The server path to Sendmail.
@@ -53,7 +53,7 @@ class Email extends BaseConfig
     /**
      * Enable persistent SMTP connections
      */
-    public bool $SMTPKeepAlive = false;
+    public bool $SMTPKeepAlive = true;
 
     /**
      * SMTP Encryption. Either tls or ssl
@@ -73,7 +73,7 @@ class Email extends BaseConfig
     /**
      * Type of mail, either 'text' or 'html'
      */
-    public string $mailType = 'text';
+    public string $mailType = 'html';
 
     /**
      * Character set (utf-8, iso-8859-1, etc.)
@@ -83,7 +83,7 @@ class Email extends BaseConfig
     /**
      * Whether to validate the email address
      */
-    public bool $validate = false;
+    public bool $validate = true;
 
     /**
      * Email Priority. 1 = highest. 5 = lowest. 3 = normal
@@ -103,7 +103,7 @@ class Email extends BaseConfig
     /**
      * Enable BCC Batch Mode.
      */
-    public bool $BCCBatchMode = false;
+    public bool $BCCBatchMode = true;
 
     /**
      * Number of emails in each BCC batch
@@ -113,5 +113,5 @@ class Email extends BaseConfig
     /**
      * Enable notify message from server
      */
-    public bool $DSN = false;
+    public bool $DSN = true;
 }

@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Libraries\GitHub;
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\CLIRequest;
 use CodeIgniter\HTTP\IncomingRequest;
@@ -36,12 +35,7 @@ abstract class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = [];
-
-    /**
-     * @var GitHub
-     */
-    protected $github;
+    protected $helpers = ['array','cookie','date','filesystem','form','html','inflector','number','security','test','text','xml'];
 
     /**
      * Be sure to declare properties for any property fetch you initialized.
@@ -57,7 +51,6 @@ abstract class BaseController extends Controller
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
 
-        $this->github = service('github');
     }
 
     /**

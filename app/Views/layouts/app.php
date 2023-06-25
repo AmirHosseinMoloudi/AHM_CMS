@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to CodeIgniter</title>
-    <meta name="description" content="The small framework with powerful features">
+    <title>AHM CMS</title>
+    <meta name="description" content="AHM CMS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('/favicons/apple-touch-icon.png') ?>">

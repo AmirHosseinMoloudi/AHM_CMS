@@ -26,7 +26,7 @@ class Kint extends BaseConfig
     public $plugins;
     public int $maxDepth           = 6;
     public bool $displayCalledFrom = true;
-    public bool $expanded          = false;
+    public bool $expanded          = true;
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ class Kint extends BaseConfig
     |--------------------------------------------------------------------------
     */
     public string $richTheme = 'aante-light.css';
-    public bool $richFolder  = false;
+    public bool $richFolder  = true;
 
     /**
      * @psalm-suppress UndefinedClass
@@ -50,7 +50,7 @@ class Kint extends BaseConfig
     |--------------------------------------------------------------------------
     */
     public bool $cliColors      = true;
-    public bool $cliForceUTF8   = false;
+    public bool $cliForceUTF8   = true;
     public bool $cliDetectWidth = true;
     public int $cliMinWidth     = 40;
 }

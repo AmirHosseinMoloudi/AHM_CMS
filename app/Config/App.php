@@ -71,7 +71,7 @@ class App extends BaseConfig
      * strings (like currency markers, numbers, etc), that your program
      * should run under for this request.
      */
-    public string $defaultLocale = 'en';
+    public string $defaultLocale = 'fa';
 
     /**
      * --------------------------------------------------------------------------
@@ -83,7 +83,7 @@ class App extends BaseConfig
      *
      * If false, no automatic detection will be performed.
      */
-    public bool $negotiateLocale = false;
+    public bool $negotiateLocale = true;
 
     /**
      * --------------------------------------------------------------------------
@@ -98,7 +98,7 @@ class App extends BaseConfig
      *
      * @var string[]
      */
-    public array $supportedLocales = ['en'];
+    public array $supportedLocales = ['en','fa'];
 
     /**
      * --------------------------------------------------------------------------
@@ -110,7 +110,7 @@ class App extends BaseConfig
      *
      * @see https://www.php.net/manual/en/timezones.php for list of timezones supported by PHP.
      */
-    public string $appTimezone = 'UTC';
+    public string $appTimezone = 'Asia/Tehran';
 
     /**
      * --------------------------------------------------------------------------
@@ -134,7 +134,7 @@ class App extends BaseConfig
      * secure, the user will be redirected to a secure version of the page
      * and the HTTP Strict Transport Security header will be set.
      */
-    public bool $forceGlobalSecureRequests = true;
+    public bool $forceGlobalSecureRequests = false;
 
     /**
      * --------------------------------------------------------------------------
@@ -160,7 +160,7 @@ class App extends BaseConfig
      *
      * @deprecated use Config\Session::$cookieName  instead.
      */
-    public string $sessionCookieName = 'ci_session';
+    public string $sessionCookieName = 'ahm_session';
 
     /**
      * --------------------------------------------------------------------------
@@ -251,7 +251,7 @@ class App extends BaseConfig
      *
      * @deprecated use Config\Cookie::$prefix property instead.
      */
-    public string $cookiePrefix = '';
+    public string $cookiePrefix = 'ahm';
 
     /**
      * --------------------------------------------------------------------------
@@ -262,7 +262,7 @@ class App extends BaseConfig
      *
      * @deprecated use Config\Cookie::$domain property instead.
      */
-    public string $cookieDomain = '';
+    public string $cookieDomain = '.localhost:8080';
 
     /**
      * --------------------------------------------------------------------------
@@ -295,7 +295,7 @@ class App extends BaseConfig
      *
      * @deprecated use Config\Cookie::$httponly property instead.
      */
-    public bool $cookieHTTPOnly = true;
+    public bool $cookieHTTPOnly = false;
 
     /**
      * --------------------------------------------------------------------------
@@ -353,7 +353,7 @@ class App extends BaseConfig
      *
      * @deprecated Use `Config\Security` $tokenName property instead of using this property.
      */
-    public string $CSRFTokenName = 'csrf_test_name';
+    public string $CSRFTokenName = 'csrf_ahm';
 
     /**
      * --------------------------------------------------------------------------
@@ -375,7 +375,7 @@ class App extends BaseConfig
      *
      * @deprecated Use `Config\Security` $cookieName property instead of using this property.
      */
-    public string $CSRFCookieName = 'csrf_cookie_name';
+    public string $CSRFCookieName = 'csrf_cookie_ahm';
 
     /**
      * --------------------------------------------------------------------------

@@ -34,6 +34,6 @@ class GitHub extends BaseConfig
      * @var string[]
      */
     public $tagged = [
-        'framework3',
+        'framework4',
     ];
 }
