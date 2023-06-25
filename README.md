@@ -1,4 +1,4 @@
-# CodeIgniter Website
+# Web-Blog Content Management System (CMS) Based on Official CodeIgniter Website
 
 [![](https://github.com/codeigniter4projects/website/workflows/PHPUnit/badge.svg)](https://github.com/codeigniter4projects/website/actions/workflows/phpunit.yml)
 [![](https://github.com/codeigniter4projects/website/workflows/PHPStan/badge.svg)](https://github.com/codeigniter4projects/website/actions/workflows/phpstan.yml)
