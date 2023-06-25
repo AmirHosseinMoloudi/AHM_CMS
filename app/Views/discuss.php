@@ -31,7 +31,7 @@
                 Our forum has been setup using MyBB, with five main categories: <br />
             </p>
             <ul>
-                <li>General (news & discussion, lounge, events, and regional user groups)</li>
+                <li>General (Blog & discussion, lounge, events, and regional user groups)</li>
                 <li>Using CodeIgniter (choosing CodeIgniter, installation & setup, model-view-controller,
                     libraries & helpers, best practices, and general help)</li>
                 <li>CodeIgniter 4 (Roadmap, Development, feature requests, support, discussion)</li>

@@ -20,5 +20,5 @@
 
 
 <?= $this->section('sidebar') ?>
-    <?= $this->include('blog/_news_sidebar') ?>
+    <?= $this->include('blog/_Blog_sidebar') ?>
 <?= $this->endSection() ?>

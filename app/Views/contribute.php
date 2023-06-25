@@ -169,16 +169,12 @@
             <div class="inner-page-text-sub-box">
                 <div class="inner-page-text-sub-box-title">CodeIgniter 4</div>
 
-                <?= $this->setData(['heroes' => $contributors['codeigniter4']])->include('layouts/_heroes') ?>
-
             </div><!--inner-page-text-sub-box ends here-->
 
             <div class="clr"></div>
 
             <div class="inner-page-text-sub-box">
                 <div class="inner-page-text-sub-box-title">CodeIgniter 4 Translations</div>
-
-                <?= $this->setData(['heroes' => $contributors['translations4']])->include('layouts/_heroes') ?>
 
             </div><!--inner-page-text-sub-box ends here-->
 
@@ -187,16 +183,12 @@
             <div class="inner-page-text-sub-box">
                 <div class="inner-page-text-sub-box-title">CodeIgniter 3</div>
 
-                <?= $this->setData(['heroes' => $contributors['framework3']])->include('layouts/_heroes') ?>
-
             </div><!--inner-page-text-sub-box ends here-->
 
             <div class="clr"></div>
 
             <div class="inner-page-text-sub-box">
                 <div class="inner-page-text-sub-box-title">CodeIgniter 3 Translations</div>
-
-                <?= $this->setData(['heroes' => $contributors['translations3']])->include('layouts/_heroes') ?>
 
             </div><!--inner-page-text-sub-box ends here-->
 
@@ -207,16 +199,12 @@
             <div class="inner-page-text-sub-box">
                 <div class="inner-page-text-sub-box-title">our Website</div>
 
-                <?= $this->setData(['heroes' => $contributors['website4']])->include('layouts/_heroes') ?>
-
             </div><!--inner-page-text-sub-box ends here-->
 
             <div class="clr"></div>
 
             <div class="inner-page-text-sub-box">
                 <div class="inner-page-text-sub-box-title">our Old Website</div>
-
-                <?= $this->setData(['heroes' => $contributors['website3']])->include('layouts/_heroes') ?>
 
             </div><!--inner-page-text-sub-box ends here-->
 

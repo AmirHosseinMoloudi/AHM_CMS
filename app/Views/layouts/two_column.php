@@ -29,13 +29,13 @@
     <div class="clr"></div>
     <section id="content-outer">
         <div id="content-inner">
-            <div id="news-left-column">
+            <div id="Blog-left-column">
                 <?= $this->renderSection('sidebar') ?>
             </div>
 
-            <div id="news-column">
+            <div id="Blog-column">
                 <?= $this->renderSection('content') ?>
-            </div><!--news-column ends-->
+            </div><!--Blog-column ends-->
             <div class="clr"></div>
 
         </div><!--content inner ends-->

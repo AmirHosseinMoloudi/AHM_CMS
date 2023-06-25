@@ -11,19 +11,19 @@ class MyBB extends BaseConfig
      * MyBB Forum ID
      * --------------------------------------------------------------------------
      *
-     * Code for the news forum in our MyBB
+     * Code for the Blog forum in our MyBB
      */
-    public $newsForumId = 2;
+    public $BlogForumId = 2;
 
     /**
      * --------------------------------------------------------------------------
      * MyBB Usernames
      * --------------------------------------------------------------------------
      *
-     * An array of user names to restrict our search for news articles to.
+     * An array of user names to restrict our search for Blog articles to.
      * This simply helps limit the work to do.
      */
-    public $newsUsernames = ['admin', 'ahm'];
+    public $BlogUsernames = ['admin', 'ahm'];
 
     /**
      * --------------------------------------------------------------------------

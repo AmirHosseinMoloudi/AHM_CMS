@@ -3,7 +3,7 @@
         <div id="logo">
             <a href="/" title="CodeIgniter.com">
 				<img src="assets/icons/ci-logo.png" />
-				<div id="logo-text">Code<span class="boldy600">Igniter</span></div>
+				<div id="logo-text"><span class="boldy600">AHM</span>CMS</div>
             </a>
         </div>
         <!--
@@ -27,11 +27,11 @@
 
         <div id="top-menu">
             <!--<a href="discover.html" class="top-menu-item hidden" title="CodeIgniter.com">Discover</a>-->
-            <a href="/news" class="top-menu-item hidden <?php if (url_is('/news*')) : ?>top-menu-item-active<?php endif ?>">News</a>
-            <a href="/discuss" class="top-menu-item hidden <?php if (url_is('/discuss')) : ?>top-menu-item-active<?php endif ?>">Discuss</a>
-            <a href="/contribute" class="top-menu-item hidden <?php if (url_is('/contribute')) : ?>top-menu-item-active<?php endif ?>">Contribute</a>
-            <a href="/user_guide/index.html" class="top-menu-item hidden">Learn</a>
-            <a href="/download" class="top-menu-item-download">Download</a>
+            <a href="/download" class="top-menu-item-download">دانلود</a>
+            <a href="/Blog" class="top-menu-item hidden <?php if (url_is('/Blog*')) : ?>top-menu-item-active<?php endif ?>">وبلاگ</a>
+<!--            <a href="/discuss" class="top-menu-item hidden --><?php //if (url_is('/discuss')) : ?><!--top-menu-item-active--><?php //endif ?><!--">Discuss</a>-->
+<!--            <a href="/contribute" class="top-menu-item hidden --><?php //if (url_is('/contribute')) : ?><!--top-menu-item-active--><?php //endif ?><!--">Contribute</a>-->
+<!--            <a href="/user_guide/index.html" class="top-menu-item hidden">Learn</a>-->
         </div><!--top-menu ende-->
         <div id="switch-theme-holder">
             <div id="mode" class="switch-theme-icon">&nbsp;</div>

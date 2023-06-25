@@ -8,6 +8,7 @@ use CodeIgniter\Exceptions\PageNotFoundException;
 use Config\Blog as BlogConfig;
 use League\CommonMark\CommonMarkConverter;
 use Throwable;
+use Hekmatinasser\Verta\Verta;
 
 /**
  * Class Blog
@@ -76,7 +77,6 @@ class Blog
                 if (! empty($category) && ! in_array($category, $temp->tags, true)) {
                     continue;
                 }
-
                 $posts[] = $temp;
             }
 
@@ -194,7 +194,7 @@ class Blog
         }
 
         return view($view, [
-            'title' => 'Recent Posts',
+            'title' => 'مطالب اخیر',
             'rows'  => $posts,
         ]);
     }
@@ -239,8 +239,8 @@ class Blog
         if ($matches === []) {
             return null;
         }
-
-        $post->date = $matches[1];
+        $orderdate = explode('-', $matches[1]);
+        $post->date = implode("-", Verta::getJalali($orderdate[0],$orderdate[1],$orderdate[2]));
         $post->slug = $matches[2];
 
         // Get the attributes from the front-matter of the file (between lines with ---)

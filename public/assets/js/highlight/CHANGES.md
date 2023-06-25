@@ -2053,7 +2053,7 @@ Plus there are a couple of minor bug fixes for parsing HTML and XML attributes.
 
 ## Version 4.2
 
-The biggest news is highlighting for Lisp, courtesy of Vasily Polovnyov. It's
+The biggest Blog is highlighting for Lisp, courtesy of Vasily Polovnyov. It's
 somewhat experimental meaning that for highlighting "keywords" it doesn't use
 any pre-defined set of a Lisp dialect. Instead it tries to highlight first word
 in parentheses wherever it makes sense. I'd like to ask people programming in
@@ -2092,7 +2092,7 @@ Styles:
 - Ascetic from myself, as a realization of ideals of non-flashy highlighting:
   just one color in only three gradations :-)
 
-In other news. [One small bug][bug] was fixed, built-in keywords were added for
+In other Blog. [One small bug][bug] was fixed, built-in keywords were added for
 Python and C++ which improved auto-detection for the latter (it was shame that
 [my wife's blog][alenacpp] had issues with it from time to time). And lastly
 thanks go to Sam for getting rid of my stylistic comments in code that were

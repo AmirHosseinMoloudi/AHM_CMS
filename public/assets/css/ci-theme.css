@@ -163,7 +163,7 @@ pre {
 	color: #252525;
 	}
 
-/* .margin-left below is extra for the Recent News and Active Forum Threads	*/
+/* .margin-left below is extra for the Recent Blog and Active Forum Threads	*/
 .margin-left-1 {
 	margin-left: 1%;
 	}
@@ -277,7 +277,7 @@ header {
 	}
 
 #logo{
-	float:left;
+	float:right;
 	margin-top:7.5px;
 	/*fill:rgba(221, 72, 20, 0.9)/*#DD4814 - #666*/;
 	}
@@ -319,7 +319,7 @@ header {
 	}
 
 #top-menu {
-	float:right;
+	float:left;
 	width:500px;
 	margin: 0;
 	padding: 0;
@@ -327,7 +327,7 @@ header {
 	}
 
 a.top-menu-item:link,a.top-menu-item:visited {
-	float:left;
+	float:right;
 	text-decoration:none;
 	height: 39px;
 	line-height: 39px;
@@ -348,7 +348,7 @@ a.top-menu-item:focus {
 
 /* top menu active one starts here */
 a.top-menu-item-active:link,a.top-menu-item-active:visited {
-	float:left;
+	float:right;
 	text-decoration:none;
 	height: 39px;
 	line-height: 39px;
@@ -369,7 +369,7 @@ a.top-menu-item-active:hover,a.top-menu-item-active:focus {
 /* top menu download button starts here */
 a.top-menu-item-download {
 	text-decoration:none;
-	float:right;
+	float:left;
 	background-color: var(--primary-color);
 	color: var(--white);
 	margin:14px 0 0 0;
@@ -382,7 +382,7 @@ a.top-menu-item-download:hover {
 	border-bottom:0px solid var(--primary-color);
 	}
 
-#switch-theme-holder{display:block;position:absolute;top:18px;right:15px;width:20px;height:20px;}
+#switch-theme-holder{display:block;position:absolute;top:18px;left:15px;width:20px;height:20px;}
 .switch-theme-icon{background:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="sbui-icon text-scale-1100 hover:text-scale-1200 transition"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>');background-position: center center;background-repeat: no-repeat;cursor:pointer;}
 /*
 #search-bar{
@@ -496,7 +496,8 @@ section#spotlight-outer{
 	}
 
 #github-scores{
-	width:188px;
+    display: flex;
+    justify-content: center;
 	height:30px;
 	margin:43px auto;
 	border:0px solid #ddd;
@@ -505,7 +506,6 @@ section#spotlight-outer{
 
 .githubs{
 	float:left;
-	width:94px;
 	height:30px;
 	border:0px solid #ddd;
 	transition: all 0.5s;
@@ -754,14 +754,14 @@ section#important-links-outer{
 
 /* Forum posts -------------------------------------------------------------- */
 
-.recent-news-and-forum-posts {
+.recent-Blog-and-forum-posts {
 	flex: auto;
 	width: 41%;
 	height: 100%;
 	margin: 38px 4%;
 	}
 
-/* rnafp is the abbr. of Recent News And Forum Posts, initials */
+/* rnafp is the abbr. of Recent Blog And Forum Posts, initials */
 .rnafp-name {
 	float: left;
 	display: block;
@@ -1013,7 +1013,7 @@ a.footer-menu-item:hover {
 	font-weight:600;
 }
 
-/* NEWS Page ------------------------------------------------------------------ */
+/* Blog Page ------------------------------------------------------------------ */
 
 section#content-outer-discover{
 	float:left;
@@ -1026,7 +1026,7 @@ section#content-outer-discover{
 
 	}
 
-#content-inner-news{
+#content-inner-Blog{
 	width:80%;
 	height:100%;
 	margin:10px auto;
@@ -1034,7 +1034,7 @@ section#content-outer-discover{
 	border:0px solid var(--section-border);
 }
 
-#news-left-column{
+#Blog-left-column{
 	float:left;
 	width:20%;
 	height:100%;
@@ -1045,7 +1045,7 @@ section#content-outer-discover{
 	border-right:1px solid var(--section-border);
 }
 
-#news-left-column h4 {
+#Blog-left-column h4 {
 	margin-bottom: 0;
     background: var(--primary-color);
     color: #fff;
@@ -1071,8 +1071,8 @@ section#content-outer-discover{
 	color:var(--primary-color);
 	border-bottom:1px dotted var(--primary-color);
 }
-a.news-left-years-active:link,
-a.news-left-years-active:visited{
+a.Blog-left-years-active:link,
+a.Blog-left-years-active:visited{
 	text-decoration:none;
 	float:left;
 	width:80%;
@@ -1083,14 +1083,14 @@ a.news-left-years-active:visited{
 	font-weight:600;
 }
 
-#news-column{
+#Blog-column{
 	float:left;
 	width:75%;
 	height:100%;
 	padding:15px;
 	box-sizing:border-box;
 }
-.news-box{
+.Blog-box{
 	float:left;
 	width:100%;
 	height:100%;
@@ -1102,12 +1102,12 @@ a.news-left-years-active:visited{
 	border-bottom:1px dashed var(--primary-color);
 	transition:all 0.5s;
 }
-.news-box:hover{
+.Blog-box:hover{
 	border:1px dashed #ccc;
 	border-bottom:1px dashed var(--primary-color);
 }
 
-.news-box-title{
+.Blog-box-title{
 	font-size:24px;
 	font-weight: bold;
 	color:var(--primary-color);
@@ -1117,15 +1117,15 @@ a.news-left-years-active:visited{
 	margin:0 0 15px 0;
 }
 
-a.news-box-title-link:link,a.news-box-title-link:visited{
+a.Blog-box-title-link:link,a.Blog-box-title-link:visited{
 	text-decoration:none;
 }
 
-a.news-box-title-link:hover{
+a.Blog-box-title-link:hover{
 	border-bottom:1px dotted #fff;
 }
 
-.news-date{
+.Blog-date{
 	float:left;
 	margin:10px;
 	font-size:14px;
@@ -1152,7 +1152,7 @@ a.news-box-title-link:hover{
     height: 100%;
 }
 
-.news-box p img{
+.Blog-box p img{
 	float:left;
 	width:98%;
 	height:auto;
@@ -1683,7 +1683,7 @@ html.dark-theme .important-link-boxes:hover {box-shadow: 0 0 15px rgba(221, 72, 
 html.dark-theme .important-link-boxes:hover svg{fill:rgba(255, 255, 255, 0.9);/*fill:rgba(221, 72, 20, 0.7);*/}
 
 
-/* rnafp is the abbr. of Recent News And Forum Posts, initials */
+/* rnafp is the abbr. of Recent Blog And Forum Posts, initials */
 html.dark-theme .rnafp-name { color: rgba(255,255,255, 0.50);	}
 html.dark-theme .rnapf-row { border-bottom: 1px solid rgba(255,255,255, 0.10);	border-left: 1px solid rgba(255,255,255, 0);}
 html.dark-theme .rnapf-row:hover {background: transparent;border-left: 1px solid rgba(221,72,20, 0.9);border-bottom: 1px solid rgba(255,255,255, 0.20);}
@@ -1729,31 +1729,31 @@ html.dark-theme .inner-page-text-sub-box{background:#1e1c1c; border:1px solid #3
 html.dark-theme .inner-page-text-sub-box-title{color:rgba(221, 72, 20, 1);}
 
 
-/* NEWS Page ------------------------------------------------------------------ */
+/* Blog Page ------------------------------------------------------------------ */
 
-html.dark-theme #news-left-column{border-right:0px solid #444;}
-html.dark-theme #news-left-column h4 {background: rgba(221, 72, 20, 0.9);color: rgba(255,255,255, 0.80);}
+html.dark-theme #Blog-left-column{border-right:0px solid #444;}
+html.dark-theme #Blog-left-column h4 {background: rgba(221, 72, 20, 0.9);color: rgba(255,255,255, 0.80);}
 
 html.dark-theme .widget a:link, html.dark-theme .widget a:visited{color:rgba(255,255,255, 0.50);border-bottom:1px dotted rgba(255,255,255, 0.50);}
 html.dark-theme .widget a:hover{color:rgba(255,255,255, 0.90);border-bottom:1px dotted rgba(255,255,255, 0.90);}
-html.dark-theme a.news-left-years-active:link, html.dark-theme a.news-left-years-active:visited{border-bottom:1px dotted #000000;color:#000000;}
+html.dark-theme a.Blog-left-years-active:link, html.dark-theme a.Blog-left-years-active:visited{border-bottom:1px dotted #000000;color:#000000;}
 
-html.dark-theme .news-box{border:1px solid #242424;}
+html.dark-theme .Blog-box{border:1px solid #242424;}
 
-html.dark-theme .news-box:hover{border:1px solid rgba(255, 255, 255, 0.2);}
-html.dark-theme .news-box h2{color: rgba(255, 255, 255, 0.8);}
-html.dark-theme .news-box h3{color: rgba(255, 255, 255, 0.8);}
+html.dark-theme .Blog-box:hover{border:1px solid rgba(255, 255, 255, 0.2);}
+html.dark-theme .Blog-box h2{color: rgba(255, 255, 255, 0.8);}
+html.dark-theme .Blog-box h3{color: rgba(255, 255, 255, 0.8);}
 
-html.dark-theme .news-box-title{color:#1a1a1a;background:transparent;}
-html.dark-theme a.news-box-title-link:link, html.dark-theme a.news-box-title-link:visited{color:rgba(221, 72, 20, 0.9);}
-html.dark-theme a.news-box-title-link:hover{border-bottom:0px dotted rgba(221, 72, 20, 1);}
+html.dark-theme .Blog-box-title{color:#1a1a1a;background:transparent;}
+html.dark-theme a.Blog-box-title-link:link, html.dark-theme a.Blog-box-title-link:visited{color:rgba(221, 72, 20, 0.9);}
+html.dark-theme a.Blog-box-title-link:hover{border-bottom:0px dotted rgba(221, 72, 20, 1);}
 
-html.dark-theme .news-date{color:#aaa;}
+html.dark-theme .Blog-date{color:#aaa;}
 
 
-html.dark-theme .news-box p{color:rgba(255, 255, 255, 0.8);}
-html.dark-theme .news-box ul li{color:rgba(255, 255, 255, 0.8);}
-html.dark-theme .news-box p img{border:1px solid #eee;}
+html.dark-theme .Blog-box p{color:rgba(255, 255, 255, 0.8);}
+html.dark-theme .Blog-box ul li{color:rgba(255, 255, 255, 0.8);}
+html.dark-theme .Blog-box p img{border:1px solid #eee;}
 
 html.dark-theme .meta {color: rgba(255,255,255, 0.50);}
 

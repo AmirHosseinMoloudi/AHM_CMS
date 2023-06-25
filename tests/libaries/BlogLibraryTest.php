@@ -47,7 +47,7 @@ final class BlogLibraryTest extends ProjectTestCase
         $this->assertSame('CodeIgniter 4.0.4 Released', $posts[0]->title);
         $this->assertSame('codeigniter-404-released', $posts[0]->slug);
         $this->assertSame('2020-07-15', $posts[0]->date);
-        $this->assertSame(['news', 'releases'], $posts[0]->tags);
+        $this->assertSame(['Blog', 'releases'], $posts[0]->tags);
         $this->assertSame('Lonnie Ezell', $posts[0]->author);
         $this->assertNotEmpty($posts[0]->body);
         $this->assertNotEmpty($posts[0]->html);
@@ -62,7 +62,7 @@ final class BlogLibraryTest extends ProjectTestCase
         $this->assertSame('CodeIgniter 4.0.4 Released', $post->title);
         $this->assertSame('codeigniter-404-released', $post->slug);
         $this->assertSame('2020-07-15', $post->date);
-        $this->assertSame(['news', 'releases'], $post->tags);
+        $this->assertSame(['Blog', 'releases'], $post->tags);
         $this->assertSame('Lonnie Ezell', $post->author);
         $this->assertNotEmpty($post->body);
         $this->assertNotEmpty($post->html);

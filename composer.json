@@ -30,7 +30,8 @@
         "knplabs/github-api": "^3.0",
         "league/commonmark": "^2.3",
         "psr/container": "^1.1",
-        "psr/http-factory": "^1.0"
+        "psr/http-factory": "^1.0",
+        "hekmatinasser/verta": "^1.12"
     },
     "require-dev": {
         "codeigniter4/devkit": "^1.0",

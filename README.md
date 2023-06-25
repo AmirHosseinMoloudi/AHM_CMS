@@ -27,7 +27,7 @@ Some of the programming design decisions reflected:
     only with building its part of a webpage.
 -   A base controller takes care of assembling finished pages, using the
     master template.
--   Mock data for the recent news and most recently active threads, means
+-   Mock data for the recent Blog and most recently active threads, means
     that the website can be tested locally, without needing access to
     the live forum database.
 -   View fragments are used to style single "records" on their own,

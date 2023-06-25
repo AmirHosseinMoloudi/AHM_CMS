@@ -19,20 +19,20 @@ final class PostTest extends ProjectTestCase
             'slug'   => 'a-simple-post',
             'date'   => date('Y-m-d', strtotime('-1 week')),
             'author' => 'Ian Fleming',
-            'tags'   => 'news, releases',
+            'tags'   => 'Blog, releases',
         ]);
     }
 
     public function testLink()
     {
-        $this->assertSame(site_url('news/a-simple-post'), $this->post->link());
+        $this->assertSame(site_url('Blog/a-simple-post'), $this->post->link());
     }
 
     public function testLinkNoSlug()
     {
         $this->post->slug = null;
 
-        $this->assertSame(site_url('news/'), $this->post->link());
+        $this->assertSame(site_url('Blog/'), $this->post->link());
     }
 
     public function testGetTagsNoData()
@@ -44,6 +44,6 @@ final class PostTest extends ProjectTestCase
 
     public function testGetTags()
     {
-        $this->assertSame(['news', 'releases'], $this->post->getTags());
+        $this->assertSame(['Blog', 'releases'], $this->post->getTags());
     }
 }
